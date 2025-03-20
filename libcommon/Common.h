@@ -14,33 +14,6 @@
 #pragma warning(pop)
 #pragma GCC diagnostic pop
 
-#define FS_API_VERSION                    "v1"
-
-
-#define FS_ICON_API                       "/favicon.ico"
-
-#define FS_OPEN_API                       "/fs/open-api/"
-#define FS_OPEN_API_FILE_UPLOAD           "/fs/open-api/v1/upload"
-#define FS_OPEN_API_FILE_VIEW             "/fs/open-api/v1/view"
-#define FS_OPEN_API_FILE_DOWNLOAD         "/fs/open-api/v1/download"
-
-
-#define FS_API                            "/fs/api/"
-#define FS_API_FILE_UPLOAD                "/fs/api/v1/upload"
-#define FS_API_FILE_VIEW                  "/fs/api/v1/view"
-#define FS_API_FILE_DOWNLOAD              "/fs/api/v1/download"
-
-
-#define FS_OPEN_API_JSON                  "/fs/open-api/v1/json"
-#define FS_API_JSON                       "/fs/api/v1/json"
-
-#define MAX_FILE_NAME_LEN                 512    
-#define TIME_FORMAT_LEN                   20                    
-
-#ifndef HTTP_AUTHFAILED
-#define HTTP_AUTHFAILED                   401
-#endif
-
 namespace archer 
 {
 namespace common 

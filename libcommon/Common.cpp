@@ -83,10 +83,10 @@ std::string archer::common::getNowTime() {
     std::time_t now = std::time(nullptr);
     now += 8 * 3600;//时区问题
     std::tm *localTime = std::localtime(&now);
-    char timestr[TIME_FORMAT_LEN];
-    std::strftime(timestr, TIME_FORMAT_LEN, "%Y-%m-%d %H:%M:%S", localTime);
-    std::string nowStr(timestr, TIME_FORMAT_LEN);
-    return std::move(nowStr);
+    char timestr[20] = {0};
+    std::strftime(timestr, 20, "%Y-%m-%d %H:%M:%S", localTime);
+    std::string nowStr(timestr);
+    return nowStr;
 }
 
 int archer::common::getUint8sFromHex(std::string const& hex, uint8_t* bytes) {
